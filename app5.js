@@ -23,6 +23,8 @@ let station2 = [
   { id:7, code:"null", name:"蘇我駅", change:"内房線，外房線", passengers:31328, distance:43.0 },
 ];
 
+
+
 app.get("/keiyo", (req, res) => {
   // 本来ならここにDBとのやり取りが入る
   res.render('db2', { data: station });
