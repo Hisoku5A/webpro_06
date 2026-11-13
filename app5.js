@@ -28,6 +28,11 @@ app.get("/keiyo", (req, res) => {
   res.render('db2', { data: station });
 });
 
+app.get("/keiyo2", (req, res) => {
+  // 本来ならここにDBとのやり取りが入る
+  res.render('db3', { data: station2 });
+});
+
 app.get("/hello1", (req, res) => {
   const message1 = "Hello world";
   const message2 = "Bon jour";
