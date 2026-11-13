@@ -19,7 +19,7 @@ let station2 = [
   { id:3, code:"JE05", name:"新木場駅", change:"有楽町線，りんかい線", passengers:67206, distance:7.4 },
   { id:4, code:"JE07", name:"舞浜駅", change:"舞浜リゾートライン", passengers:76156,distance:12.7 },
   { id:5, code:"JE12", name:"新習志野駅", change:"", passengers:11655, distance:28.3 },
-  { id:6, code:"JE18", name:"千葉みなと駅", change:"千葉都市モノレール", passengers:16602, distance:39.0 },
+  { id:6, code:"JE17", name:"千葉みなと駅", change:"千葉都市モノレール", passengers:16602, distance:39.0 },
   { id:7, code:"null", name:"蘇我駅", change:"内房線，外房線", passengers:31328, distance:43.0 },
 ];
 
