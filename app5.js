@@ -30,7 +30,7 @@ app.get("/keiyo", (req, res) => {
 
 app.get("/keiyo2", (req, res) => {
   // 本来ならここにDBとのやり取りが入る
-  res.render('db3', { data: station2 });
+  res.render('keiyo2', { data: station2 });
 });
 
 app.get("/hello1", (req, res) => {
