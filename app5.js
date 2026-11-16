@@ -134,4 +134,20 @@ app.get("/keiyo_add", (req, res) => {
   res.redirect("/keiyo");
 });
 
+app.get("/yoyo_add", (req, res) => {
+  let id = req.query.id;
+  let code = req.query.code;
+  let name = req.query.name;
+  let color = req.query.color;
+  let Bearing = req.query.Bearing;
+  let string = req.query.string;
+  let long = req.query.long;
+  let pads = req.query.pads;
+  let Equipment = req.query.Equipment;
+  let data = req.query.data;
+  let newdata = { id: id, code: code, name: name, color: color, Bearing: Bearing, string: string, long: long, pads: pads, Equipment: Equipment, data: data };
+  yoyos.push( newdata );
+  res.redirect("/yoyo");
+});
+
 app.listen(8080, () => console.log("Example app listening on port 8080!"));
