@@ -55,6 +55,11 @@ app.get("/keiyo2/:number",(req,res)=>{
   res.render('keiyo2_detail', { data: dettail });
 });
 
+app.get("/yoyo", (req, res) => {
+  // 本来ならここにDBとのやり取りが入る
+  res.render('yoyo', { data: yoyos });
+});
+
 app.get("/hello1", (req, res) => {
   const message1 = "Hello world";
   const message2 = "Bon jour";
