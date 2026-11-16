@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ヨーヨーメンテナンス</title>
+</head>
+<body>
+  <h2>ヨーヨーの詳細</h2>
+  <table>
+    <tr><th>コード</th><th>名前</th><th>色</th><th>data</th></tr>
+      <% let number = 0 %>
+      <% for( let row of data ) { %>
+        <tr><td><%= row.code %></td>
+        <td><a href="/yoyo/<%= number %>"></a><%= row.name %></td>
+        <td><%= row.color %></td>
+        <td><%= row.Bearing %></td>
+        </tr>
+        <% number += 1 %>
+      <% } %>
+  </table>
+</body>
+</html>
