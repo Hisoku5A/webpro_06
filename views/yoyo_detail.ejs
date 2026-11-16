@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.name %></title>
+</head>
+<body>
+  <h2><%= data.name %>の詳細</h2>
+  <table>
+    <tr><th>項目</th><th>データ</th></tr>
+    <tr><td>ID</td><td><%= data.id %></td></tr>
+    <tr><td>名前</td><td><%= data.name %></td></tr>
+    <tr><td>色</td><td><%= data.color %></td></tr>
+    <tr><td>ベアリング</td><td><%= data.Bearing %></td></tr>
+    <tr><td>紐</td><td><%= data.string %></td></tr>
+    <tr><td>紐の長さ</td><td><%= data.long %></td></tr>
+    <tr><td>パッド</td><td><%= data.pads %></td></tr>
+    <tr><td>使用ギア</td><td><%= data.Equipment %></td></tr>
+    <tr><td>前回の日付</td><td><%= data.data %></td></tr>
+  </table>
+  <a href="/yoyo">ヨーヨーの一覧に戻る</a>
+</body>
+</html>
