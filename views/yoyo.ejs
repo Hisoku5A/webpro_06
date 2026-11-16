@@ -7,13 +7,13 @@
 <body>
   <h2>ヨーヨーの詳細</h2>
   <table>
-    <tr><th>コード</th><th>名前</th><th>色</th><th>data</th></tr>
+    <tr><th>コード</th><th>名前</th><th>色</th><th>前回の日付</th></tr>
       <% let number = 0 %>
       <% for( let row of data ) { %>
         <tr><td><%= row.code %></td>
         <td><a href="/yoyo/<%= number %>"></a><%= row.name %></td>
         <td><%= row.color %></td>
-        <td><%= row.Bearing %></td>
+        <td><%= row.data %></td>
         </tr>
         <% number += 1 %>
       <% } %>
