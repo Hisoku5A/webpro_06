@@ -60,6 +60,12 @@ app.get("/yoyo", (req, res) => {
   res.render('yoyo', { data: yoyos });
 });
 
+app.get("/yoyo/:number",(req,res)=>{
+  const number = req.params.number;
+  const dettail = yoyos[number];
+  res.render('yoyo_detail', { data: dettail });
+});
+
 app.get("/hello1", (req, res) => {
   const message1 = "Hello world";
   const message2 = "Bon jour";
