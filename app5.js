@@ -36,7 +36,7 @@ let yoyos = [
   { id:10, code:"5A01", name:"アクト3", color:"ブルー", Bearing:"C3カーブベアリング", string:"22P2N(ホワイト)", long:"93cm", pads:"SGHG硬度40", Equipment:"ponウエイト", data:"" },
   { id:11, code:"5A02", name:"アクト3", color:"ブルー", Bearing:"C3カーブベアリング", string:"22P2N(ホワイト)", long:"93cm", pads:"SGHG硬度40", Equipment:"ponウエイト", data:"" },
   { id:12, code:"5A03", name:"スピーダホリックXX", color:"グロウ", Bearing:"C3カーブベアリング", string:"22P2N(ホワイト)", long:"93cm", pads:"SGHG硬度40", Equipment:"ponウエイト", data:"" },
-  { id:13, code:"5A04", name:"cood3", color:"ネイビー(sketch)", Bearing:"C3カーブベアリング", string:"22P2N(ホワイト)", long:"93cm", pads:"SGHG硬度40", Equipment:"ponウエイト", data:""},
+  { id:13, code:"5A04", name:"cood3", color:"ネイビー(sketch)", Bearing:"C3カーブベアリング", string:"Jストリング(イエロー)", long:"93cm", pads:"SGHG硬度40", Equipment:"ponウエイト", data:""},
 ]
 
 app.get("/keiyo", (req, res) => {
