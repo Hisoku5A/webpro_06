@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.name %></title>
+</head>
+<body>
+  <h2><%= data.name %>の編集</h2>
+  <form action="/yoyo/update/<%= data.id - 1 %>" method="POST">
+    <table>
+      <tr><th>項目</th><th>データ</th></tr>
+      <tr><td>スタイル</td><td><input type="text" name="style" value="<%= data.style %>"></td></tr>
+      <tr><td>ヨーヨーの名前</td><td><input type="text" name="name" value="<%= data.name %>"></td></tr>
+      <tr><td>色</td><td><input type="text" name="color" value="<%= data.color %>"></td></tr>
+      <tr><td>ストリング</td><td><input type="text" name="string" value="<%= data.string %>"></td></tr>
+      <tr><td>長さ</td><td><input type="text" name="long" value="<%= data.long %>"></td></tr>
+      <tr><td>パッド</td><td><input type="text" name="pads" value="<%= data.pads %>"></td></tr>
+      <tr><td>使用ギア</td><td><input type="text" name="Equipment" value="<%= data.Equipment %>"></td></tr>
+      <tr><td>最終メンテナンス日</td><td><input type="text" name="data" value="<%= data.data %>"></td></tr>
+    </table>
+    <input type="submit" values="登録">
+  </form>
+  <a href="/yoyo">一覧に戻る</a>
+</body>
+</html>
