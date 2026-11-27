@@ -201,7 +201,14 @@ app.post("/yoyo", (req, res) => {
   const name = req.body.name;
   const coler = req.body.coler;
   const Bearing = req.body.Bearing;
-  
+  const string = req.body.string;
+  const long = req.body.long;
+  const pads = req.body.pads;
+  const Equipment = req.body.Equipment
+  const data = req.body.data;
+  yoyos.push({id: id, style: style, name: name, color:coler, Bearing: Bearing, string: string, long: long, pads: pads, Equipment:Equipment, data:data});
+  console.log( yoyos );
+  res.render('yoyo', {data: yoyos});
 })
 
 app.get("/yoyo_add", (req, res) => {

@@ -10,7 +10,7 @@
     <tr><th>コード</th><th>名前</th><th>色</th><th>前回の日付</th></tr>
       <% let number = 0 %>
       <% for( let row of data ) { %>
-        <tr><td><%= row.code %></td>
+        <tr><td><%= row.style %></td>
         <td><a href="/yoyo/<%= number %>"><%= row.name %></a></ td>
         <td><%= row.color %></td>
         <td><%= row.data %></td>
@@ -18,6 +18,6 @@
         <% number += 1 %>
       <% } %>
   </table>
-  <a href="yoyo/add">追加する</a>
+  <a href="yoyo_add.html">追加する</a>
 </body>
 </html>
