@@ -106,16 +106,6 @@ app.post("/keiyo2/update/:number", (req, res) => {
   res.redirect('/keiyo2' );
 });
 
-app.get("/yoyo", (req, res) => {
-  // 本来ならここにDBとのやり取りが入る
-  res.render('yoyo', { data: yoyos });
-});
-
-app.get("/yoyo/:number",(req,res)=>{
-  const number = req.params.number;
-  const dettail = yoyos[number];
-  res.render('yoyo_detail', { data: dettail });
-});
 
 app.get("/hello1", (req, res) => {
   const message1 = "Hello world";
@@ -184,6 +174,31 @@ app.get("/keiyo_add", (req, res) => {
   station.push( newdata );
   res.redirect("/keiyo");
 });
+
+app.get("/yoyo", (req, res) => {
+  // 本来ならここにDBとのやり取りが入る
+  res.render('yoyo', { data: yoyos });
+});
+
+app.get("/yoyo/create",(req, res) => {
+  res.redirect('/pubric/yoyo_add.html');
+});
+
+app.get("/yoyo/:number",(req,res) => {
+  const number = req.params.number;
+  const dettail = yoyos[number];
+  res.render('yoyo_detail', { data: dettail });
+});
+
+app.get("/yoyo/delete/:number", (req, res) => {
+  yoyos.splice( req.params.number,1);
+  res.redirect('/yoyo');
+});
+
+app.post("/yoyo", (req, res) => {
+  const id = yoyos.length + 1;
+  const code = req.body.code;
+})
 
 app.get("/yoyo_add", (req, res) => {
   let id = req.query.id;
