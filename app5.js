@@ -199,7 +199,7 @@ app.post("/yoyo", (req, res) => {
   const id = yoyos.length + 1;
   const style = req.body.style;
   const name = req.body.name;
-  const coler = req.body.coler;
+  const coler = req.body.color;
   const Bearing = req.body.Bearing;
   const string = req.body.string;
   const long = req.body.long;
@@ -209,8 +209,27 @@ app.post("/yoyo", (req, res) => {
   yoyos.push({id: id, style: style, name: name, color:coler, Bearing: Bearing, string: string, long: long, pads: pads, Equipment:Equipment, data:data});
   console.log( yoyos );
   res.render('yoyo', {data: yoyos});
-})
+});
 
+app.get("/yoyo/edit/:number", (req, res) => {
+  const number = req.params.number;
+  const detail = yoyos [ number ];
+  res.render('yoyo_edit', {id: number, data: detail});
+});
+
+app.post("/yoyo/update/:number", (req, res) => {
+  yoyos[req.params.number].style = req.body.style;
+  yoyos[req.params.number].name = req.body.name;
+  yoyos[req.params.number].color = req.body.color;
+  yoyos[req.params.number].Bearing = req.body.Bearing;
+  yoyos[req.params.number].string = req.body.string;
+  yoyos[req.params.number].long = req.body.long;
+  yoyos[req.params.number].pads = req.body.pads;
+  yoyos[req.params.number].Equipment = req.body.Equipment;
+  yoyos[req.params.number].data = req.body.data;
+  console.log ( yoyos );
+  res.redirect( '/yoyo' );
+});
 
 
 app.listen(8080, () => console.log("Example app listening on port 8080!"));
