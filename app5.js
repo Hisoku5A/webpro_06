@@ -25,19 +25,19 @@ let station2 = [
 ];
 
 let yoyos = [
-  { id:1, code:"1A01", name:"アクト3", color:"シルバー", Bearing:"ミネベアカーブベアリング", string:"Jストリング(イエロー)", long:"床からみぞおちまで", pads:"SGHG硬度70", Equipment:"-", data:"" },
-  { id:2, code:"1A02", name:"プラグマ", color:"ブラック×レインボースプラッシュ", Bearing:"C3カーブベアリング", string:"Kストリング ノーマル(ホワイト)", long:"床からみぞおちまで", pads:"SGHG硬度70", Equipment:"-", data:"" },
-  { id:3, code:"1A03", name:"レインフライEX", color:"マットブラック×パープルリム", Bearing:"初期搭載カーブベアリング", string:"Jストリング(イエロー)", long:"床からみぞおちまで", pads:"SGHG硬度60", Equipment:"-", data:"" },
-  { id:4, code:"2A01", name:"ループ720", color:"オレンジ/グリーン", Bearing:"赤×青スペーサー", string:"22P2N(ホワイト)", long:"81cm", pads:"", Equipment:"-", data:"" },
-  { id:5, code:"2A02", name:"ループ720", color:"オレンジ/グリーン", Bearing:"赤×青スペーサー", string:"22P2N(ホワイト)", long:"81cm", pads:"", Equipment:"-", data:"" },
-  { id:6, code:"3A01", name:"エンタングル2", color:"raw", Bearing:"ノンブランド曲面加工ベアリング", string:"Jストリング(ホワイト)", long:"84cm", pads:"SGHG硬度40", Equipment:"-", data:"" },
-  { id:7, code:"3A02", name:"エンタングル2", color:"raw", Bearing:"ノンブランド曲面加工ベアリング", string:"Jストリング(ホワイト)", long:"84cm", pads:"SGHG硬度40", Equipment:"-", data:"" },
-  { id:8, code:"4A01", name:"コントレイル", color:"イエロー/ゴールドハブ", Bearing:"C3フラットベアリング", string:"22P2N(ホワイト)", long:"105cm", pads:"REWIND JAPANパッド ノーマル", Equipment:"-", data:"" },
-  { id:9, code:"4A02", name:"コントレイル", color:"ミントグリーン/シルバーハブ", Bearing:"C3フラットベアリング", string:"22P2N(ホワイト)", long:"105cm", pads:"REWIND JAPANパッド ノーマル", Equipment:"-", data:"" },
-  { id:10, code:"5A01", name:"アクト3", color:"ブルー", Bearing:"C3カーブベアリング", string:"22P2N(ホワイト)", long:"93cm", pads:"SGHG硬度40", Equipment:"ponウエイト", data:"" },
-  { id:11, code:"5A02", name:"アクト3", color:"ブルー", Bearing:"C3カーブベアリング", string:"22P2N(ホワイト)", long:"93cm", pads:"SGHG硬度40", Equipment:"ponウエイト", data:"" },
-  { id:12, code:"5A03", name:"スピーダホリックXX", color:"グロウ", Bearing:"C3カーブベアリング", string:"22P2N(ホワイト)", long:"93cm", pads:"SGHG硬度40", Equipment:"ponウエイト", data:"" },
-  { id:13, code:"5A04", name:"code3", color:"ネイビー(sketch)", Bearing:"C3カーブベアリング", string:"Jストリング(イエロー)", long:"93cm", pads:"SGHG硬度40", Equipment:"ponウエイト", data:""},
+  { id:1, style:"1A", name:"アクト3", color:"シルバー", Bearing:"ミネベアカーブベアリング", string:"Jストリング(イエロー)", long:"床からみぞおちまで", pads:"SGHG硬度70", Equipment:"-", data:"" },
+  { id:2, style:"1A", name:"プラグマ", color:"ブラック×レインボースプラッシュ", Bearing:"C3カーブベアリング", string:"Kストリング ノーマル(ホワイト)", long:"床からみぞおちまで", pads:"SGHG硬度70", Equipment:"-", data:"" },
+  { id:3, style:"1A", name:"レインフライEX", color:"マットブラック×パープルリム", Bearing:"初期搭載カーブベアリング", string:"Jストリング(イエロー)", long:"床からみぞおちまで", pads:"SGHG硬度60", Equipment:"-", data:"" },
+  { id:4, style:"2A", name:"ループ720", color:"オレンジ/グリーン", Bearing:"赤×青スペーサー", string:"22P2N(ホワイト)", long:"81cm", pads:"", Equipment:"-", data:"" },
+  { id:5, style:"2A", name:"ループ720", color:"オレンジ/グリーン", Bearing:"赤×青スペーサー", string:"22P2N(ホワイト)", long:"81cm", pads:"", Equipment:"-", data:"" },
+  { id:6, style:"3A", name:"エンタングル2", color:"raw", Bearing:"ノンブランド曲面加工ベアリング", string:"Jストリング(ホワイト)", long:"84cm", pads:"SGHG硬度40", Equipment:"-", data:"" },
+  { id:7, style:"3A", name:"エンタングル2", color:"raw", Bearing:"ノンブランド曲面加工ベアリング", string:"Jストリング(ホワイト)", long:"84cm", pads:"SGHG硬度40", Equipment:"-", data:"" },
+  { id:8, style:"4A", name:"コントレイル", color:"イエロー/ゴールドハブ", Bearing:"C3フラットベアリング", string:"22P2N(ホワイト)", long:"105cm", pads:"REWIND JAPANパッド ノーマル", Equipment:"-", data:"" },
+  { id:9, style:"4A", name:"コントレイル", color:"ミントグリーン/シルバーハブ", Bearing:"C3フラットベアリング", string:"22P2N(ホワイト)", long:"105cm", pads:"REWIND JAPANパッド ノーマル", Equipment:"-", data:"" },
+  { id:10, style:"5A", name:"アクト3", color:"ブルー", Bearing:"C3カーブベアリング", string:"22P2N(ホワイト)", long:"93cm", pads:"SGHG硬度40", Equipment:"ponウエイト", data:"" },
+  { id:11, style:"5A", name:"アクト3", color:"ブルー", Bearing:"C3カーブベアリング", string:"22P2N(ホワイト)", long:"93cm", pads:"SGHG硬度40", Equipment:"ponウエイト", data:"" },
+  { id:12, style:"5A", name:"スピーダホリックXX", color:"グロウ", Bearing:"C3カーブベアリング", string:"22P2N(ホワイト)", long:"93cm", pads:"SGHG硬度40", Equipment:"ponウエイト", data:"" },
+  { id:13, style:"5A", name:"code3", color:"ネイビー(sketch)", Bearing:"C3カーブベアリング", string:"Jストリング(イエロー)", long:"93cm", pads:"SGHG硬度40", Equipment:"ponウエイト", data:""},
 ]
 
 app.get("/keiyo", (req, res) => {
@@ -197,12 +197,16 @@ app.get("/yoyo/delete/:number", (req, res) => {
 
 app.post("/yoyo", (req, res) => {
   const id = yoyos.length + 1;
-  const code = req.body.code;
+  const style = req.body.style;
+  const name = req.body.name;
+  const coler = req.body.coler;
+  const Bearing = req.body.Bearing;
+  
 })
 
 app.get("/yoyo_add", (req, res) => {
   let id = req.query.id;
-  let code = req.query.code;
+  let style = req.query.style;
   let name = req.query.name;
   let color = req.query.color;
   let Bearing = req.query.Bearing;
